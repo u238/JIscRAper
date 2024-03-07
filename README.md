@@ -29,3 +29,8 @@ For making statistics over all users run
 podman run -it -v ~/.config/jiscraper.toml:/root/.config/jiscraper.toml:z localhost/jiscraper --all-authors
 ```
 
+## Hints
+You can add an alias in your `.bashrc`/`.zshrc` file
+```shell
+alias jiscraper="podman run -it -v ~/.config/jiscraper.toml:/root/.config/jiscraper.toml:z localhost/jiscraper"
+```
