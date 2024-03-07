@@ -1,0 +1,5 @@
+[jira]
+host = "https://<your-jira-space>.atlassian.net/"
+email = "<email-address>"
+# Create an API Token here: https://id.atlassian.com/manage-profile/security/api-tokens
+api_token = "<api-token>"

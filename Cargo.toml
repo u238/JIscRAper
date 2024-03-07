@@ -1,0 +1,22 @@
+[package]
+name = "JIscRAper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+clap = { version = "=4.4", features = ["derive"] }
+log = "0.4.21"
+env_logger = "0.11.2"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1"
+toml = "0.8.10"
+fs-err = "2.11"
+goji = {version = "0.2.8", package = "wp_goji_patch", features = ["rustls-tls"]}
+chrono = "0.4.34"
+itertools = "0.12.1"
+prettytable-rs = "^0.10"
+rayon = "1.8"
+shellexpand = "3.1.0"
