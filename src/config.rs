@@ -6,7 +6,7 @@ use anyhow::anyhow;
 
 #[derive(Parser)]
 pub struct Args {
-    #[clap(long, default_value="~/.config/jiscraper2.toml")]
+    #[clap(long, default_value="~/.config/jiscraper.toml")]
     pub config: PathBuf,
     #[clap(long, short, action)]
     pub all_authors: bool
@@ -25,8 +25,7 @@ impl Config {
                 let config = toml::from_str(&file)?;
                 Ok(config)
             }
-            Err(e) => Err(anyhow!(r#"
-Error reading config file {}.
+            Err(e) => Err(anyhow!(r#" reading config file {}.
 Consider creating this file with the following content:
             
 [jira]
